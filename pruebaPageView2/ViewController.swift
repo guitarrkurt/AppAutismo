@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -22,7 +23,12 @@ class ViewController: UIViewController {
     
     var aux = String()
     
-
+    
+    var bandera = false
+    var min = "42"
+    
+    
+    var player = AVAudioPlayer ()
     
     override func viewDidLoad()
     {
@@ -51,7 +57,8 @@ class ViewController: UIViewController {
                     
                     
                     
-                    if(self.minuto == "40"){
+                    if(self.minuto == self.min){
+
                         print("entro banoInit")
                         self.aux = "bano"
                         self.button.setImage(UIImage(named: "banarInit"), forState: .Normal)
@@ -60,6 +67,44 @@ class ViewController: UIViewController {
                 
                 }
             }
+        }
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)){
+            self.date = NSDate()
+            self.time = self.formatter.stringFromDate(self.date)
+            self.minuto = self.getMinuto()
+            self.bandera = true
+            while(true){
+                
+                if self.minuto == self.min && self.bandera == true{
+                
+                    
+                    
+                    
+                    self.bandera = false
+                    
+                    let sound = NSURL (fileURLWithPath: NSBundle.mainBundle().pathForResource("burbujas", ofType: "mp3")!)
+                    do{
+                        try self.player = AVAudioPlayer (contentsOfURL: sound)
+                    } catch{
+                        //CREAMOS UNA VARIABLE PARA GESTIONA ERRORES
+                        let error = NSError?()
+                        print(error)
+                    }
+                    self.player.prepareToPlay()
+                    self.player.play()
+                    
+                    
+                    
+                    let localNotification = UILocalNotification()
+                    localNotification.fireDate = NSDate(timeIntervalSinceNow: 1)
+                    localNotification.alertBody = "Hora de bañarse"
+                    localNotification.timeZone = NSTimeZone.defaultTimeZone()
+                    localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+                    UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+                }
+            }
+        
         }
 
     }
