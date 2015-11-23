@@ -19,12 +19,16 @@ class ComerViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let image = UIImage(named: "statusBarTitle.png")
+        self.navigationItem.titleView = UIImageView(image: image)
+        
+        
         self.pageTitles = NSArray()
         self.pageImages = NSArray()
         
         if(aux == "bano"){
             
-            self.pageTitles = NSArray(objects: "Desvistete y coloca tu ropa en el bote de\nla ropa sucia", "Abre la llave de paso y espera a que\nel agua se entibie", "Coloca champu en tu cabello y\nenjabona tu cuerpo", "Secate bien y usa ropa limpia")
+            self.pageTitles = NSArray(objects: "Desvistete y coloca tu ropa en el bote de la ropa sucia", "Abre la llave de paso y espera a que el agua se entibie", "Coloca champu en tu cabello y enjabona tu cuerpo", "Secate bien y usa ropa limpia")
             self.pageImages = NSArray(objects: "banar1", "banar2", "banar3", "banar4")
         }else{
             

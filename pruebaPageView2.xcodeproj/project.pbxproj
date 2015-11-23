@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		611D120E1C02A5D500286903 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611D120D1C02A5D500286903 /* AVFoundation.framework */; };
-		611D12101C02A5F000286903 /* burbujas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 611D120F1C02A5F000286903 /* burbujas.mp3 */; };
-		6132D5071BDE3003007E0897 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6132D5061BDE3003007E0897 /* sky.jpg */; };
 		616D4FE21BDE07940056ECF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D4FE11BDE07940056ECF3 /* AppDelegate.swift */; };
 		616D4FE41BDE07940056ECF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D4FE31BDE07940056ECF3 /* ViewController.swift */; };
 		616D4FE71BDE07940056ECF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616D4FE51BDE07940056ECF3 /* Main.storyboard */; };
@@ -18,6 +16,11 @@
 		616D4FF81BDE07940056ECF3 /* pruebaPageView2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D4FF71BDE07940056ECF3 /* pruebaPageView2Tests.swift */; };
 		616D50021BDE08E50056ECF3 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D50011BDE08E50056ECF3 /* ContentViewController.swift */; };
 		616D50041BDE0AF30056ECF3 /* ComerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D50031BDE0AF30056ECF3 /* ComerViewController.swift */; };
+		619E4F841C02DB75002F9FFB /* launchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 619E4F831C02DB75002F9FFB /* launchImage.png */; };
+		61B8496D1C02FBE7000E5B14 /* statusBarTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B8496C1C02FBE7000E5B14 /* statusBarTitle.png */; };
+		61B849701C03070D000E5B14 /* comer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61B8496E1C03070D000E5B14 /* comer.mp3 */; };
+		61B849711C03070D000E5B14 /* dientes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61B8496F1C03070D000E5B14 /* dientes.mp3 */; };
+		61B849731C030712000E5B14 /* burbujas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61B849721C030712000E5B14 /* burbujas.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		611D120D1C02A5D500286903 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		611D120F1C02A5F000286903 /* burbujas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = burbujas.mp3; sourceTree = "<group>"; };
-		6132D5061BDE3003007E0897 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
 		616D4FDC1BDE07940056ECF3 /* pruebaPageView2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaPageView2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		616D4FE01BDE07940056ECF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616D4FE11BDE07940056ECF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +47,11 @@
 		616D4FF71BDE07940056ECF3 /* pruebaPageView2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaPageView2Tests.swift; sourceTree = "<group>"; };
 		616D50011BDE08E50056ECF3 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		616D50031BDE0AF30056ECF3 /* ComerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComerViewController.swift; sourceTree = "<group>"; };
+		619E4F831C02DB75002F9FFB /* launchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage.png; sourceTree = "<group>"; };
+		61B8496C1C02FBE7000E5B14 /* statusBarTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusBarTitle.png; sourceTree = "<group>"; };
+		61B8496E1C03070D000E5B14 /* comer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comer.mp3; sourceTree = "<group>"; };
+		61B8496F1C03070D000E5B14 /* dientes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dientes.mp3; sourceTree = "<group>"; };
+		61B849721C030712000E5B14 /* burbujas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = burbujas.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,6 @@
 				616D50011BDE08E50056ECF3 /* ContentViewController.swift */,
 				616D50031BDE0AF30056ECF3 /* ComerViewController.swift */,
 				616D4FE81BDE07940056ECF3 /* Images.xcassets */,
-				611D120F1C02A5F000286903 /* burbujas.mp3 */,
-				616D4FEA1BDE07940056ECF3 /* LaunchScreen.xib */,
 				616D4FDF1BDE07940056ECF3 /* Supporting Files */,
 			);
 			path = pruebaPageView2;
@@ -105,7 +109,12 @@
 		616D4FDF1BDE07940056ECF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6132D5061BDE3003007E0897 /* sky.jpg */,
+				61B849721C030712000E5B14 /* burbujas.mp3 */,
+				61B8496E1C03070D000E5B14 /* comer.mp3 */,
+				61B8496F1C03070D000E5B14 /* dientes.mp3 */,
+				61B8496C1C02FBE7000E5B14 /* statusBarTitle.png */,
+				616D4FEA1BDE07940056ECF3 /* LaunchScreen.xib */,
+				619E4F831C02DB75002F9FFB /* launchImage.png */,
 				616D4FE01BDE07940056ECF3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -210,9 +219,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B849731C030712000E5B14 /* burbujas.mp3 in Resources */,
+				619E4F841C02DB75002F9FFB /* launchImage.png in Resources */,
 				616D4FE71BDE07940056ECF3 /* Main.storyboard in Resources */,
-				6132D5071BDE3003007E0897 /* sky.jpg in Resources */,
-				611D12101C02A5F000286903 /* burbujas.mp3 in Resources */,
+				61B849711C03070D000E5B14 /* dientes.mp3 in Resources */,
+				61B8496D1C02FBE7000E5B14 /* statusBarTitle.png in Resources */,
+				61B849701C03070D000E5B14 /* comer.mp3 in Resources */,
 				616D4FEC1BDE07940056ECF3 /* LaunchScreen.xib in Resources */,
 				616D4FE91BDE07940056ECF3 /* Images.xcassets in Resources */,
 			);

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "app2-01.png"
+      "filename" : "comerInit.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

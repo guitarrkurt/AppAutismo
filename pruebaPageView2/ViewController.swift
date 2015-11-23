@@ -25,17 +25,21 @@ class ViewController: UIViewController {
     
     
     var bandera = false
-    var min = "42"
+    var min = "35"
     
     
     var player = AVAudioPlayer ()
     
     override func viewDidLoad()
     {
-        UIApplication.sharedApplication().statusBarHidden = true
         super.viewDidLoad()
+        //Ocultar la hora
+        UIApplication.sharedApplication().statusBarHidden = true
         formatter.timeStyle = .LongStyle
-        
+        //Cambiar el centro del status bar
+        let image = UIImage(named: "statusBarTitle.png")
+        self.navigationItem.titleView = UIImageView(image: image)
+        //Hilo que cambia las imagenes
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0))
         {
             // do your task...
@@ -46,29 +50,21 @@ class ViewController: UIViewController {
                 self.minuto = self.getMinuto()
                 print("min: \(self.minuto)")
                 
-
-                
                 dispatch_async(dispatch_get_main_queue())
                 {
                     // update some UI...
                     self.clockLabel.text = self.time.substringToIndex(self.time.startIndex.advancedBy(10))
-                    
-                    
-                    
-                    
-                    
+
                     if(self.minuto == self.min){
 
                         print("entro banoInit")
                         self.aux = "bano"
                         self.button.setImage(UIImage(named: "banarInit"), forState: .Normal)
-                        
                     }
-                
                 }
             }
         }
-        
+        //Hilo Notificaciones y Sonidos
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)){
             self.date = NSDate()
             self.time = self.formatter.stringFromDate(self.date)

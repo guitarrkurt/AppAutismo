@@ -20,18 +20,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let pageController = UIPageControl.appearance()
         pageController.pageIndicatorTintColor = UIColor.lightGrayColor()
         pageController.currentPageIndicatorTintColor = UIColor.whiteColor()
-        pageController.backgroundColor =  UIColor(red: 91.0/255.0, green: 150.0/255.0, blue: 209.0/255.0, alpha: 1.0)
+        //Barra de abajo
+        pageController.backgroundColor = UIColor(red: 54.0/255.0, green: 104.0/255.0, blue: 189.0/255.0, alpha: 1.0)
+
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 91.0/255.0, green: 150.0/255.0, blue: 209.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        //Barra Navigation Bar
+        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
+
+        //Texto navigation Bar
+        UINavigationBar.appearance().tintColor = UIColor(red: 54.0/255.0, green: 104.0/255.0, blue: 189.0/255.0, alpha: 1.0)
+
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
 
         
-        var types: UIUserNotificationType = [UIUserNotificationType.Badge,
+        let types: UIUserNotificationType = [UIUserNotificationType.Badge,
             UIUserNotificationType.Alert,
             UIUserNotificationType.Sound]
         
-        var settings: UIUserNotificationSettings = UIUserNotificationSettings( forTypes: types, categories: nil )
+        let settings: UIUserNotificationSettings = UIUserNotificationSettings( forTypes: types, categories: nil )
         
         application.registerUserNotificationSettings( settings )
         application.registerForRemoteNotifications()
